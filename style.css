@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@100..900&family=Creepster&family=Lexend+Deca:wght@100..900&family=Oxygen:wght@300;400;700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@100..900&family=Creepster&family=Lexend+Deca:wght@100..900&family=Oxygen:wght@300;400;700&family=Pacifico&family=Satisfy&display=swap');
+*{
+    margin:0;
+    padding:0;
+
+}
+img{
+    width:100%;
+    height:100%;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+p{
+    font-size: 1.5rem;
+}
+audio{
+    margin-top:2rem;
+}
+
+.con{
+    align-items: center;
+    color:yellow;
+   text-align: center;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    box-sizing: border-box; 
+   padding: 4rem;
+   position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+.fristpage {
+    background: url("https://media.gettyimages.com/id/1433035090/video/loopable-diwali-diyas-with-rotating-rangoli-or-mandala-design-happy-diwali-card-with-copy.jpg?s=640x640&k=20&c=UT1AoksaaAEy_SRzdFLMZlQxdioBnBbXhml1Nm9E8Z4=") ; /* Image center aligned */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.Secondpage{
+    background: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.God{
+     width:35%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Diya{
+    width: 150px;
+   height:100px ;
+   position: absolute;
+   top: 70%;
+   left: 63%;
+   transform: translate(-50%, -50%);
+   animation: curveMove 4s ease-in-out infinite;
+}
+@keyframes curveMove {
+    0% {
+        left: 63%;
+    }
+    50% {
+        left: 49%; 
+        top: 65%;  
+    }
+    100% {
+        left: 35%; 
+        top: 70%; 
+    }
+}
+
+.Threepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.reason {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 60%;
+    height: 750px;
+}
+
+#message {
+    width: 100%;
+    height: 100%;
+   
+}
+
+#ramji {
+    width: 30%;
+    height: auto;
+   
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    width:25rem;
+    
+    text-shadow: 2px 2px 5px black; 
+}
+.overlay-text p{
+    font-size: 1.3rem;
+    color:yellow;
+    font-family: "Satisfy", cursive;
+    font-style: normal;
+}
+.overlay-text h1{
+    font-size: 1.6rem;
+   font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+    color:yellow;
+}
+
+.Fourpage{
+    background: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 700px) {
+    h1 {
+        font-size: 1.5rem;
+       
+    }
+    p {
+        font-size: 1rem;
+    }
+    .God{
+        width:90%;
+    
+    }
+    .reason {
+      
+        width: 100%;
+        height: 100%;
+        flex-direction: column; 
+    }
+    
+    .image-container {
+        position: relative;
+        width: 100%;
+        
+    }
+    
+    #message {
+        position: absolute;
+        top:5%;
+        width: 700px;
+        height: 600px;
+        box-sizing: border-box;
+        padding-right: 20rem;
+        text-align: justify; 
+      
+       
+    }
+    
+    #ramji {
+        display: none;
+       
+    }
+    .overlay-text {
+        
+        width:10rem;
+        
+        
+    }
+    .overlay-text p{
+        font-size: 1rem;
+        
+       
+    }
+    .overlay-text h1{
+        font-size: 1.2rem;
+      
+    }
+    
+
+    
+}
+@media (min-width: 700px) and (max-width: 900px) {
+    .God {
+        width: 90%;
+       
+        
+    }
+
+    #Diya {
+        width: 200px;
+        height: 150px;
+        
+    }
+    .reason {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image-container {
+        position: relative;
+        top:10%;
+        width: 60%;
+        
+    }
+    
+    #message {
+        width: 100%;
+        height: 100%;
+       
+    }
+    
+    #ramji {
+        position: relative;
+        bottom:10%;
+        width: 50%;
+        height: auto;
+       
+       
+    }
+    
+    
+    
+    .overlay-text {
+        position: absolute;
+         text-align: justify; 
+        transform: translate(-50%, -50%); 
+       max-width:10rem;
+        text-shadow: 2px 2px 5px black; 
+        
+    }
+    .overlay-text p{
+        font-size: 1rem;
+        color:yellow;
+        font-family: "Satisfy", cursive;
+        font-style: normal;
+    }
+    .overlay-text h1{
+        font-size: 1.5rem;
+       font-family: "Pacifico", cursive;
+      font-weight: 400;
+      font-style: normal;
+        color:yellow;
+    }
+    
+    
+}
+@media (min-width: 900px){
+    .image-container {
+        position: relative;
+        top:-7%;
+        width: 60%;
+        /* height: 570px; */
+    }
+    #message {
+        width: 100%;
+        height: 100%;
+       
+    }
+    
+    #ramji {
+        position: relative;
+        bottom:10%;
+        width: 50%;
+        height: auto;
+       
+       
+    }
+    
+    .overlay-text {
+        position: absolute;
+        max-width:10rem;
+       
+        
+    }
+    .overlay-text p{
+        font-size: 1rem;
+        
+    }
+    .overlay-text h1{
+        font-size: 1.5rem;
+      
+    }
+    @media (min-width: 500px)and(max-width: 600px){
+        
+    }
+    
+}
+
